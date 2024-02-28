@@ -2,9 +2,9 @@
 
 // put function declarations here:
 int myFunction(int, int);
-int rode_led=12;
-int gele_led=11;
-int groene_led=13;
+int rode_led=A1;
+int gele_led=A2;
+int groene_led=A3;
 
 void setup() {
   // put your setup code here, to run once:
@@ -17,6 +17,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(rode_led, HIGH);
+  digitalWrite(gele_led, LOW);
   delay(10000);
   digitalWrite(rode_led, LOW);
   digitalWrite(groene_led,HIGH);
@@ -24,9 +25,6 @@ void loop() {
   digitalWrite(groene_led, LOW);
   digitalWrite(gele_led,HIGH);
   delay(2000);
-  digitalWrite(gele_led, LOW);
-  delay(3000);
-    
   }
 
 // put function definitions here:
