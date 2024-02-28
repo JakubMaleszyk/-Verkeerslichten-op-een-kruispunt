@@ -20,10 +20,10 @@ void loop() {
   digitalWrite(gele_led, LOW);
   delay(10000);
   digitalWrite(rode_led, LOW);
-  digitalWrite(groene_led,HIGH);
-  delay(8000);
-  digitalWrite(groene_led, LOW);
   digitalWrite(gele_led,HIGH);
+  delay(8000);
+  digitalWrite(groene_led, HIGH);
+  digitalWrite(gele_led,LOW);
   delay(2000);
   }
 
